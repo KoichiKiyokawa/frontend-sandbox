@@ -1,0 +1,17 @@
+---
+type Props = {
+  variant: "primary" | "secondary"
+}
+
+const { variant } = Astro.props
+---
+
+<h1
+  class:list={[
+    "text-center",
+    variant === "primary" && "text-3xl font-bold leading-[3rem]",
+    variant === "secondary" && "text-lg",
+  ]}
+>
+  <slot />
+</h1>
