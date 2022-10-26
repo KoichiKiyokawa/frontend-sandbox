@@ -1,0 +1,6 @@
+name = "header-ssr"
+main = "src/index.ts"
+compatibility_date = "2022-10-11"
+
+[site]
+bucket = "../web/dist"
